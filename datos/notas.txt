@@ -1,0 +1,28 @@
+<article class="reproductor col-12 col-lg-6">
+    <div id="player">
+        <img src="multimedia/Imagenes/510_White.jpg" class="rounded cover" id="art" />
+        <div class="trackinfo text-center justify-content-center">
+            <p id="title"></p>
+            <p id="artist"></p>
+        </div>
+        <div id="track">
+            <div id="progress"></div>
+            <div id="handler"></div>
+        </div>
+        <div class="container">
+            <div class="info">
+                <div class="cont">
+                    <button id="prev" class="nave">
+                        <span class="icon-after"></span>
+                    </button>
+                    <button id="play" class="nave">
+                        <span class="icon-play"></span>
+                    </button>
+                    <button id="next" class="nave">
+                         <span class="icon-next"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>

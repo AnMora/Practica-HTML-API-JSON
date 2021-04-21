@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PROYECTO M||RA</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--LOGO-->
+    <link class="logo" rel="shortcut icon" href="multimedia/Imagenes/MORA1.png">
+    
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="CSS/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="CSS/fontello.css">
+    
+    <!--ESTILOS-->    
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/logo.css">
+    <link rel="stylesheet" href="CSS/logo2.css">
+    
+</head>
+<body>
+    <div class="bg-color-index">
+        <video src="multimedia/Videos/HAZE%20_%20NEED%20FOR%20SPEED(720P_HD).mp4" autoplay loop muted></video>
+
+        <header class="jumbotron-fluid p-1" id="HOME">
+            <div title="BAR & ELECTRO" data-toggle="tooltip" data-placement="bottom" class="container text-center text-light">
+                <img class="xlog" src="multimedia/Imagenes/MORA1.png" alt="MORA" href="#HOME">
+                <h4>PROYECTO M||RA</h4>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-md navbar-default navbar-dark sticky-top">
+            <div class="container">
+                <a title="BAR & ELECTRO" data-toggle="tooltip" data-placement="bottom" class="navbar-brand" id="logo" href="#HOME">
+                    <img src="multimedia/Imagenes/MORA1.png" alt="" style="width: 60px;">
+                    <span class="font-weight-bold glitch2">M||RA</span>
+                </a>
+               <button class="justify-content-end navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
+                   <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="justify-content-end collapse navbar-collapse" id="collapse_target">
+                    <ul class="navbar-nav">
+                        <li class="active nav-item">
+                            <a title="HOME" data-toggle="tooltip" data-placement="bottom" class="nav-link" href="#LogIn">L||G IN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <main>
+            <div class="container">
+                <section class="container text-light text-center m-1">
+                    <div class="row jumbotron-fluid">
+                        <article class="col-12 col-lg-6">
+                            <div class="embed-responsive embed-responsive-16by9">
+                              <iframe title="video con fines ilustrativos" class="embed-responsive-item rounded" src="multimedia/Videos/TOKYO%20NIGHTS%20-%20NFS%20CINEMATIC%20%204K-720p.mp4" allowfullscreen volumen="0">
+                              </iframe>
+                            </div>
+                        </article>
+                        
+                        <article class="col-12 col-lg-6 p-1">
+                          <p class="lead">Este es un proyecto realizado en mis estudios que he trabajado junto con una base de datos en datos JSON, diseño y creación propia de mi parte.</p>
+                          <h1 class="display-5">Bienvenidos a 
+                            <br/>
+                            <span class="glitch1">M||RA</span>!</h1>
+                          <hr class="my-1">
+                          <p>ESTE ES UN BLOG DE DEMUESTRA, ESPERO LES GUSTE!</p>
+                        </article>
+                    </div>
+                </section>
+                
+                <section class="container text-light m-1 mt-5 mb-5" id="LogIn">
+                    
+                        <article class="text-center offset-lg-2 col-12 col-md-12 col-lg-8">
+                            <h4 class="display-5">Ingresa a <span class="glitch1">M||RA</span> y enterate de todo lo relacionado a este proyecto!</h4>
+                            <p class="lead">Esta página esta ligada a una base de datos ya creada por lo cual para poder ingresar deberás revisar F12 y conocer los usuarios en lista ya creados o bien ver en la lista creada en la parte de abajo del formulario!</p>
+                              <hr class="my-1">
+                        </article>
+                        
+                        <div class="text-center">
+                            <div class="row">
+                                <form id="form" action="##" class="col-12 col-lg-6">
+                                    <h4 class="display-5">Ingresa</h4>
+                                    <hr class="my-1">
+                                    <div class="form-group align-items-center">
+                                        <div class="col-auto">
+                                            <label for="inlineFormInput">Username</label>
+                                            <input type="text" class="form-control mb-2 text-center" id="User" placeholder="Jane">
+                                            <small id="emailHelp" class="form-text text-muted">Por favor revisa bien tus datos cuando termines.</small>
+                                        </div>
+                                        <div class="col-auto">
+                                            <label for="inlineFormInputGroup">Email</label>
+                                            <div class="input-group mb-2">
+                                            <input type="password" class="form-control text-center" id="Password" placeholder="JaneDoe@april.biz">
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <input type="submit" id="submit_login" class="btn btn-outline-info mb-2" value="Ingresar" action="" onclick="usrpas()">
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- muestra de usuarios y emails para ingresar -->
+                                <div class="text-light col-12 col-lg-6" id="FIVE">
+                                    <h4 class="display-5">USUARIOS</h4>
+                                    <p class="lead">Puedes usar uno de estos nombres dados por la API y correos para acceder a la pagina!</p>
+                                    <div class="list-group">
+                                        <div class="row" id="Users">
+                                        </div>
+                                    </div>            
+                                </div>
+                            </div>
+                        </div>
+                </section>   
+            </div>            
+        </main>
+        
+        <footer class="container-fluid fixed-bottom foo1">
+            <a title="BAR & ELECTRO" data-toggle="tooltip" data-placement="top" class="navbar-brand" id="logo" href="#HOME">
+                <img src="multimedia/Imagenes/MORA1.png" alt="" href="#mora">
+                <span class="text-light font-weight-bold glitch2" href="#mora">M||RA</span>
+            </a>
+        </footer>
+        
+    </div>
+    <!--JAVASCRIPT-->
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/custom.js"></script>
+    <script src="JS/listusers.js"></script>
+    <script src="JS/validar_User.js"></script>
+</body>
+</html>

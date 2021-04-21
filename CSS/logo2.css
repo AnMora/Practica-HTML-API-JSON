@@ -1,0 +1,78 @@
+.glitch2 {
+  /*font-size: 130px;*/
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  position: relative;
+  -webkit-transform: translate(0%, -5%);
+  /*transform: translate(-50%, -50%);*/
+  margin: 0;
+  text-decoration: none;
+  /*color: #fff;*/ }
+
+.glitch2:before, .glitch2:after {
+  display: block;
+  content: 'M||RA';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .8; }
+
+.glitch2:after {
+  color: #f0f;
+  z-index: -2; }
+
+.glitch2:before {
+  color: #0ff;
+  z-index: -1; }
+
+.glitch2::before {
+  -webkit-animation: glitch2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  animation: glitch2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite; }
+
+.glitch2::after {
+  -webkit-animation: glitch2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  animation: glitch2 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite; }
+
+@-webkit-keyframes glitch2 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  to {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+@keyframes glitch2 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0); }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px); }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px); }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px); }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px); }
+  to {
+    -webkit-transform: translate(0);
+    transform: translate(0); } }
+
+/*# sourceMappingURL=logo2.css.map */
